@@ -5,7 +5,7 @@ import NavBar from './components/navBar/NavBar'
 import CardListMobile from './components/cardListMobile/CardListMobile'
 
 function App() {
-  const [isMobileView, setIsMobileView] = useState(false)
+  const [isMobileView, setIsMobileView] = useState(true)
 
   return (
     <div className={styles.container}>

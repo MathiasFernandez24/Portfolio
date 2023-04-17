@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './CardListWeb.module.css'
-import Card from '../card/Card'
-import { PROYECTS } from '../../dataBase/PROYECTS'
+import CardWeb from '../cardWeb/CardWeb'
+import { PROJECTS_WEB } from '../../dataBase/PROYECTS'
 
 const CardListWeb = () => {
-    const [projectList, setProjectList] = useState(PROYECTS)
+    const projectList = PROJECTS_WEB
     return (
         <div className={styles.container}>
             {
-                projectList.map(project => <Card project={project} key={project.id} />)
+                projectList.map(project => <CardWeb project={project} key={project.id} />)
             }
         </div>
     )

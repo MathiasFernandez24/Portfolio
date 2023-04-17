@@ -4,6 +4,7 @@ import ProfilePicture from '../../dataBase/profile-pic.png'
 import { IconBrandGithubFilled, IconBrandLinkedin, IconBrandWhatsapp, IconMailForward, IconFileCv } from '@tabler/icons-react';
 import iconMobile from '../../dataBase/iconMobile.png'
 import iconWeb from '../../dataBase/iconWeb.png'
+import cv from '../../dataBase/cv.pdf'
 
 const NavBar = ({ setIsMobileView }) => {
 
@@ -16,9 +17,9 @@ const NavBar = ({ setIsMobileView }) => {
                 <div className={styles.socialMediaContainer}>
                     <a className={styles.decoration} href="https://github.com/MathiasFernandez24" target={"_blank"}><IconBrandGithubFilled className={styles.socialMediaIcon} /> </a>
                     <a className={styles.decoration} href="https://www.linkedin.com/in/mathias-nicolas-fernandez-figueroa-98450482/" target={"_blank"}><IconBrandLinkedin className={styles.socialMediaIcon} /> </a>
-                    <a className={styles.decoration} href="https://wa.me/5402644585409?text=Hola,%20he%20visto%20tu%20Portfolio%20y%20me%20ha%20gustado%20mucho!/" target={"_blank"}><IconBrandWhatsapp className={styles.socialMediaIcon} /> </a>
-                    <a className={styles.decoration} href="mailto:mathias_fernandez_24@hotmail.com?Subject=He%20visto%20tu%20Portfolio%20y%20me%20ha%20gustado%20mucho!/" target={"_blank"}><IconMailForward className={styles.socialMediaIcon} /> </a>
-                    <a className={styles.decoration} href="https://google.com" target={"_blank"}><IconFileCv className={styles.socialMediaIcon} /> </a>
+                    <a className={styles.decoration} href="https://wa.me/5402644585409?text=Hola,%20he%20visto%20tu%20Portfolio%20y%20me%20ha%20gustado" target={"_blank"}><IconBrandWhatsapp className={styles.socialMediaIcon} /> </a>
+                    <a className={styles.decoration} href="mailto:mathias_fernandez_24@hotmail.com?Subject=He%20visto%20tu%20Portfolio%20y%20me%20ha%20gustado" target={"_blank"}><IconMailForward className={styles.socialMediaIcon} /> </a>
+                    <a className={styles.decoration} href={cv} target={"_blank"} download="Mathias_N_Fernandez_CV.pdf" ><IconFileCv className={styles.socialMediaIcon} /> </a>
                 </div>
                 <div className={styles.mobileWebContainer}>
                     <div>
