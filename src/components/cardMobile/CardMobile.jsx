@@ -7,12 +7,16 @@ const CardMobile = ({ project }) => {
         <div className={styles.container}>
             <img className={styles.video} src={project.video} alt="loaging.." />
             <div className={styles.detailContainer}>
-                <a className={styles.decoration} href={project.repositorio} target={"_blank"}> <IconBrandGithub className={styles.icons} /> </a>
-                <div className={styles.detailContainerText}>
-                    <p>{project.name}</p>
-                    <p>{project.date}</p>
+
+                <div className={styles.detailContainerGit}>
+                    <a className={styles.decoration} href={project.repositorio} target={"_blank"}> <IconBrandGithub className={styles.icons} /> </a>
+                    {project.date}
+                </div >
+
+                <div className={styles.title}>
+                    <h1>{project.name}</h1>
                 </div>
-                <a className={styles.decoration} href={project.page} target={"_blank"}>  <IconHome2 className={project.page ? styles.icons : styles.iconsDisabled} /> </a>
+
             </div>
         </div>
     )

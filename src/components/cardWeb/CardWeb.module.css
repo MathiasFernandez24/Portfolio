@@ -1,7 +1,7 @@
 .container {
     max-width: 1200px;
     width: 50vw;
-    min-width: 830px;
+    min-width: 820px;
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(47, 47, 47);

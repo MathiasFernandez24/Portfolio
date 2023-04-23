@@ -6,7 +6,7 @@ import iconMobile from '../../dataBase/iconMobile.png'
 import iconWeb from '../../dataBase/iconWeb.png'
 import cv from '../../dataBase/cv.pdf'
 
-const NavBar = ({ setIsMobileView }) => {
+const NavBar = ({ setIsMobileView, isMobileView }) => {
 
 
     return (
@@ -19,14 +19,17 @@ const NavBar = ({ setIsMobileView }) => {
                     <a className={styles.decoration} href="https://www.linkedin.com/in/mathias-nicolas-fernandez-figueroa-98450482/" target={"_blank"}><IconBrandLinkedin className={styles.socialMediaIcon} /> </a>
                     <a className={styles.decoration} href="https://wa.me/5402644585409?text=Hola,%20he%20visto%20tu%20Portfolio%20y%20me%20ha%20gustado" target={"_blank"}><IconBrandWhatsapp className={styles.socialMediaIcon} /> </a>
                     <a className={styles.decoration} href="mailto:mathias_fernandez_24@hotmail.com?Subject=He%20visto%20tu%20Portfolio%20y%20me%20ha%20gustado" target={"_blank"}><IconMailForward className={styles.socialMediaIcon} /> </a>
-                    <a className={styles.decoration} href={cv} target={"_blank"} download="Mathias_N_Fernandez_CV.pdf" ><IconFileCv className={styles.socialMediaIcon} /> </a>
+                    <a className={styles.decoration} href={cv} target={"_blank"}  ><IconFileCv className={styles.socialMediaIcon} /> </a>
+                    {/* <a className={styles.decoration} href={cv} target={"_blank"} download="Mathias_N_Fernandez_CV.pdf" ><IconFileCv className={styles.socialMediaIcon} /> </a> */}
                 </div>
                 <div className={styles.mobileWebContainer}>
-                    <div>
-                        <img className={styles.iconMobile} src={iconMobile} alt="loading.." onClick={() => setIsMobileView(true)} />
+                    <div className={styles.containerIcon}>
+                        <img className={styles.icon} src={iconMobile} alt="loading.." onClick={() => setIsMobileView(true)} />
+                        <div className={isMobileView && styles.iconIndicator} />
                     </div>
-                    <div>
-                        <img className={styles.iconMobile} src={iconWeb} alt="loading.." onClick={() => setIsMobileView(false)} />
+                    <div className={styles.containerIcon}>
+                        <img className={styles.icon} src={iconWeb} alt="loading.." onClick={() => setIsMobileView(false)} />
+                        <div className={!isMobileView && styles.iconIndicator} />
                     </div>
                 </div>
 

@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className={styles.container}>
-      <NavBar setIsMobileView={setIsMobileView} />
+      <NavBar setIsMobileView={setIsMobileView} isMobileView={isMobileView} />
       {
         isMobileView ?
           <CardListMobile />
