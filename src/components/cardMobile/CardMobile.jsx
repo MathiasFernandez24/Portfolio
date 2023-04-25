@@ -7,7 +7,9 @@ const CardMobile = ({ project }) => {
     return (
         <div class="animate__animated animate__fadeIn">
             <div className={styles.container}>
-                <img className={styles.video} src={project.video} alt="loaging.." />
+                <div class="animate__animated animate__fadeIn animate__slower">
+                    <img className={styles.video} src={project.video} alt="loaging.." />
+                </div>
                 <div className={styles.detailContainer}>
 
                     <div className={styles.detailContainerGit}>
