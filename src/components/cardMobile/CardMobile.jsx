@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import styles from './CardMobile.module.css'
-import { IconBrandGithub, IconHome2 } from '@tabler/icons-react'
+import { IconBrandGithub } from '@tabler/icons-react'
 import 'animate.css';
+import qr_example from '../../dataBase/preview-mobile-proyects/QR_muestra_no_scan.jpg'
 
 const CardMobile = ({ project }) => {
-    const [isQRView, setIsQRView] = useState(false)
-    console.log(isQRView);
+    const [isQRsView, setisQRsView] = useState(false)
+    console.log(isQRsView);
 
 
 
@@ -13,13 +14,17 @@ const CardMobile = ({ project }) => {
         <div class={styles.qrCard} >
 
             {device === "android" ?
-                <p class={styles.textQR}>Scan with expo app to test on Android</p>
+                <p class={styles.textQR}>Android</p>
                 :
-                <p class={styles.textQR}>Scan with expo app to test on Ios</p>
+                <p class={styles.textQR}>Ios</p>
             }
-            <img className={styles.qr} src={qr} alt="loaging QR android.." />
+            <div class={styles.qrContainSinlge}>
+                <img className={styles.qrNoScan} src={qr_example} alt="loaging QR android.." />
+                <img className={styles.qr} src={qr} alt="loaging QR android.." />
+            </div>
         </div>
     )
+
 
 
 
@@ -27,13 +32,13 @@ const CardMobile = ({ project }) => {
         <div class="animate__animated animate__fadeIn">
             <div
                 className={styles.container}
-                onMouseEnter={() => { setIsQRView(true) }}
-                onMouseLeave={() => { setIsQRView(false) }}
+                onMouseEnter={() => { setisQRsView(true) }}
+                onMouseLeave={() => { setisQRsView(false) }}
             >
 
                 <div class="animate__animated animate__fadeIn animate__slower">
                     {/* {
-                        isQRView && */}
+                        isQRsView && */}
                     <div class={styles.qrContainer}>
                         <QrCard qr={project.qr_android} device={"android"} />
                         <QrCard qr={project.qr_ios} device={"ios"} />
