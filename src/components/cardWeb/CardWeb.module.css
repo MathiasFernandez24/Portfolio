@@ -62,3 +62,7 @@
     color: white;
     text-decoration: none;
 }
+
+.nameAndDate {
+    font-family: 'Anton', sans-serif;
+}

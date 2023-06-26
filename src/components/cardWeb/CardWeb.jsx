@@ -13,8 +13,8 @@ const Card = ({ project }) => {
                 <div className={styles.detailContainer}>
                     <a className={styles.decoration} href={project.repositorio} target={"_blank"}> <IconBrandGithub className={styles.icons} /> </a>
                     <a className={styles.decoration} href={project.page} target={"_blank"}>  <IconHome2 className={project.page ? styles.icons : styles.iconsDisabled} /> </a>
-                    <h3>{project.name}</h3>
-                    <h3>{project.date}</h3>
+                    <h3 className={styles.nameAndDate}>{project.name}</h3>
+                    <h3 className={styles.nameAndDate}>{project.date}</h3>
                 </div>
             </div >
         </div >
