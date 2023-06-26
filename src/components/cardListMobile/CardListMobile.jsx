@@ -8,12 +8,12 @@ const CardListMobile = () => {
     return (
         <div className={styles.container}>
             <h1 className={styles.textInstruccion}>
-                <span className={styles.spanSlash}>Step 1 </span>
+                <span className={styles.spanText}>Step 1 </span>
                 download the Expo-App on your phone
-                <span className={styles.spanSlash}> Step 2 </span>
+                <span className={styles.spanText}> Step 2 </span>
                 scan the QR
-                <span className={styles.spanSlash}> Step 3 </span>
-                test any app</h1>
+                <span className={styles.spanText}> Step 3 </span>
+                test any Apps</h1>
             <div className={styles.containerDevices}>
                 {
                     projectList.map(project => <CardMobile project={project} key={project.id} />)
