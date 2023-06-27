@@ -1,12 +1,12 @@
 .container {
-    max-width: 1200px;
-    width: 50vw;
-    min-width: 820px;
+    margin: 5%;
+    margin-top: 6%;
+}
+
+.containerImage {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
     background-color: rgb(47, 47, 47);
-    margin: 20px 0px;
-    padding: 15px;
     border-radius: 20px;
     border: rgb(192, 192, 192) solid 3px;
     overflow: hidden;
@@ -14,25 +14,32 @@
     transition: 0.15s;
 }
 
-.container:hover {
+.container:hover .containerImage {
     transition: 0.15s;
     border: blueviolet solid 3px;
     box-shadow: 0px 0px 50px 10px rgba(138, 43, 226, 0.3);
 }
 
+.container:hover .nameAndDate {
+    transition: 0.15s;
+    text-shadow: 0px 0px 20px rgba(138, 43, 226);
+}
+
+
+
 .detailContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     color: white;
 }
 
 .icons {
     transition: 0.15s;
-    width: 128px;
-    height: 128px;
+    width: 80px;
+    height: 80px;
 }
 
 .iconsDisabled {
@@ -44,25 +51,38 @@
 
 .icons:hover {
     cursor: pointer;
-    /* color: rgb(202, 202, 202); */
     transition: 0.15s;
     scale: 0.96;
-    opacity: 0.7;
     color: blueviolet;
+    border-color: aqua;
 }
 
 .video {
-    margin-left: 10px;
-    height: 400px;
-    width: 711px;
-    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    transition: 0.2;
 }
 
 .decoration {
+    display: flex;
     color: white;
-    text-decoration: none;
+    border-radius: 50px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 50px 10px rgba(138, 43, 226, 0.3);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.containerNameAndGit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
 }
 
 .nameAndDate {
+    transition: 0.15s;
     font-family: 'Anton', sans-serif;
+    font-size: 32px;
 }

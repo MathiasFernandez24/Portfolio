@@ -12,8 +12,8 @@ const NavBar = ({ setIsMobileView, isMobileView }) => {
     return (
         <div className={styles.container}>
             <img src={ProfilePicture} alt="loading..." className={styles.img} />
-            <h7 className={styles.textName}>Mathias N. Fernandez</h7>
             <div className={styles.detail}>
+                <h7 className={styles.textName}>Mathias N. Fernandez</h7>
                 <div className={styles.socialMediaContainer}>
                     <a className={styles.decoration} href="https://github.com/MathiasFernandez24" target={"_blank"}><IconBrandGithubFilled className={styles.socialMediaIcon} /> </a>
                     <a className={styles.decoration} href="https://www.linkedin.com/in/mathias-nicolas-fernandez-figueroa-98450482/" target={"_blank"}><IconBrandLinkedin className={styles.socialMediaIcon} /> </a>
@@ -33,7 +33,7 @@ const NavBar = ({ setIsMobileView, isMobileView }) => {
                     </div>
                 </div>
 
-                <h2 className={styles.textWebMobile}>Dev Mobile & web</h2>
+                <h2 className={styles.textName}>Frontend developer</h2>
 
             </div>
         </div>
