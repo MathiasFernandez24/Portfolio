@@ -1,5 +1,7 @@
 .container {
-    margin: 5%;
+    transition: 0.2s;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 6%;
 }
 
@@ -12,6 +14,8 @@
     overflow: hidden;
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2);
     transition: 0.15s;
+    background-color: black;
+    padding: 10px;
 }
 
 .container:hover .containerImage {
@@ -20,26 +24,29 @@
     box-shadow: 0px 0px 50px 10px rgba(138, 43, 226, 0.3);
 }
 
-.container:hover .nameAndDate {
-    transition: 0.15s;
-    text-shadow: 0px 0px 20px rgba(138, 43, 226);
+.container:hover {
+    .name {
+        transition: 0.15s;
+        text-shadow: 0px 0px 20px rgba(138, 43, 226);
+    }
+
+    .date {
+        transition: 0.15s;
+        text-shadow: 0px 0px 20px rgba(138, 43, 226);
+    }
 }
-
-
 
 .detailContainer {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    text-align: center;
-    justify-content: space-around;
     color: white;
+    /* background-color: aqua; */
 }
 
 .icons {
-    transition: 0.15s;
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
 }
 
 .iconsDisabled {
@@ -53,36 +60,75 @@
     cursor: pointer;
     transition: 0.15s;
     scale: 0.96;
-    color: blueviolet;
-    border-color: aqua;
+    color: rgb(180, 100, 255);
 }
+
 
 .video {
     height: 100%;
     width: 100%;
     transition: 0.2;
+    border-radius: 10px;
 }
 
 .decoration {
     display: flex;
+    width: 8%;
     color: white;
     border-radius: 50px;
     padding: 10px;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 50px 10px rgba(138, 43, 226, 0.3);
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgb(80, 80, 80);
+}
+
+.decoration:hover {
+    box-shadow: 0px 0px 50px 10px rgba(138, 43, 226, 0.3);
 }
 
 .containerNameAndGit {
     display: flex;
-    justify-content: center;
+    flex: 1;
     align-items: center;
     gap: 2vw;
 }
 
-.nameAndDate {
-    transition: 0.15s;
+.name {
+    transition: 0.2s;
     font-family: 'Anton', sans-serif;
-    font-size: 32px;
+    font-size: 30px;
+}
+
+.date {
+    transition: 0.2s;
+    font-family: 'Anton', sans-serif;
+    font-size: 18px;
+}
+
+@media (max-width: 950px) {
+    .container {
+        transition: 0.2s;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .container {
+        transition: 0.2s;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .name {
+        transition: 0.2s;
+        font-size: 20px;
+    }
+
+    .date {
+        transition: 0.2s;
+        font-size: 12px;
+    }
 }
