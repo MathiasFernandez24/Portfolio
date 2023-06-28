@@ -1,17 +1,12 @@
 .container {
     display: flex;
-    /* padding: 100px; */
     flex-direction: column;
     position: fixed;
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(55, 55, 55);
     height: 100vh;
     width: 20vw;
-    /* padding: 1vw; */
-    /* flex: 1; */
-    /* min-width: 140px; */
     box-shadow: 10px 0px 80px 5px rgba(0, 0, 0, 0.4);
     transition: 0.5s;
-    /* background-color: red; */
 }
 
 .img {
@@ -19,13 +14,6 @@
     padding: 2%;
     width: 96%;
     transition: 0.5s;
-    /* flex-direction: column; */
-    /* flex: 1; */
-    /* height: fit-content; */
-    /* padding: 5%; */
-    /* width: 100%; */
-    /* height: ; */
-    /* overflow: hidden; */
 }
 
 .detail {
@@ -51,7 +39,6 @@
     transition: 0.1s;
     width: 100%;
     height: 100%;
-    /* background-color: aqua; */
 }
 
 .socialMediaIcon:hover {
@@ -68,8 +55,6 @@
     justify-content: center;
     align-items: center;
     width: 40%;
-    /* align-items: center; */
-    /* background-color: aqua; */
 }
 
 .iconIndicator {
@@ -132,27 +117,6 @@
     transition: 0.9s;
 }
 
-/* @media (max-width: 1600px) {
-    .textName {
-        font-size: 26px;
-        transition: 0.9s;
-    }
-}
-
-@media (max-width: 1300px) {
-    .textName {
-        font-size: 22px;
-        transition: 0.9s;
-    }
-}
-
-@media (max-width: 1150px) {
-    .textName {
-        font-size: 18px;
-        transition: 0.9s;
-    }
-} */
-
 @media (max-width: 950px) {
     .container {
         flex-direction: row;
@@ -172,7 +136,6 @@
 
     .textName {
         font-size: 28px;
-        /* background-color: aqua; */
     }
 
     .iconIndicator {
@@ -192,7 +155,6 @@
 
     .textName {
         font-size: 42px;
-        /* background-color: aqua; */
     }
 
     .img {

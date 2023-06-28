@@ -4,6 +4,7 @@ import CardWeb from '../cardWeb/CardWeb'
 import { PROJECTS_WEB } from '../../dataBase/PROYECTS'
 
 const CardListWeb = () => {
+
     const projectList = PROJECTS_WEB
     return (
         <div className={styles.container}>

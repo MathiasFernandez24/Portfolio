@@ -7,14 +7,11 @@ import { IconBrandApple, IconBrandAndroid } from '@tabler/icons-react';
 const CardListMobile = () => {
     const projectList = PROJECTS_MOBILE
 
-
     const Arrow = () => (
         <div className={styles.arrowContainer}>
             <div className={styles.arrow}></div>
         </div>
     )
-
-
 
     return (
         <div className={styles.container}>

@@ -10,15 +10,12 @@ function App() {
   return (
     <div className={styles.container}>
       <NavBar setIsMobileView={setIsMobileView} isMobileView={isMobileView} />
-      {/* <div> */}
-      {/* <div style={{ backgroundColor: 'blueviolet', height: 100, width: 100 }}></div> */}
       {
         isMobileView ?
           <CardListMobile />
           :
           <CardListWeb />
       }
-      {/* </div> */}
     </div>
   )
 }

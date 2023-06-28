@@ -122,6 +122,10 @@
         margin-right: 5%;
     }
 
+    .containerImage {
+        padding: 6px;
+    }
+
     .name {
         transition: 0.2s;
         font-size: 20px;
