@@ -52,9 +52,19 @@
 .containerIcon {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 40%;
+    /* background-color: aqua; */
+}
+
+.textNameIcon {
+    display: flex;
+    position: absolute;
+    font-size: 10px;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    transition: 0.8s;
+    opacity: 0;
 }
 
 .iconIndicator {
@@ -67,36 +77,36 @@
     margin-top: 25px;
     box-shadow: 0px 0px 50px 10px rgba(138, 43, 226, 0.3);
     border: 3px solid blueviolet;
+    animation: bounce 0.4s infinite alternate;
 }
 
 .icon {
     display: flex;
     width: 90%;
     transition: 0.2s;
+
 }
+
 
 .icon:hover {
     cursor: pointer;
     transition: 0.2s;
-    scale: 1.3;
+    scale: 1.1;
 }
+
+.icon:hover+.textNameIcon {
+    transition: 0.5s;
+    opacity: 1;
+    transform: translateY(-200%);
+    font-size: 26px;
+}
+
 
 .mobileWebContainer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     transition: 0.1s;
-}
-
-.textWebMobile {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 32px;
-    font-weight: bold;
-    text-shadow: 0px 0px 20px rgb(0, 0, 0);
-    font-family: 'Anton', sans-serif;
-    transition: 0.9s;
 }
 
 .decoration {
@@ -111,11 +121,52 @@
     justify-content: center;
     text-align: center;
     color: white;
-    /* font-size: 32px; */
+    font-size: 32px;
     font-family: 'Anton', sans-serif;
     text-shadow: 0px 0px 20px rgb(0, 0, 0);
-    transition: 0.9s;
+    transition: 1s;
 }
+
+.textSubName {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 26px;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    transition: 3s;
+    animation: colorText 4s alternate infinite;
+}
+
+@keyframes colorText {
+    0% {
+        color: blueviolet;
+        text-shadow: 0px 0px 20px rgba(138, 43, 226);
+    }
+
+    35% {
+        color: white;
+    }
+
+    70% {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+
+}
+
+
+@keyframes bounce {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
 
 @media (max-width: 950px) {
     .container {
@@ -138,6 +189,10 @@
         font-size: 28px;
     }
 
+    .textSubName {
+        font-size: 24px;
+    }
+
     .iconIndicator {
         margin-top: 30px;
     }
@@ -155,6 +210,10 @@
 
     .textName {
         font-size: 42px;
+    }
+
+    .textSubName {
+        font-size: 30px;
     }
 
     .img {

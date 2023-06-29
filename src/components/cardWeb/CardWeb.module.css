@@ -1,7 +1,7 @@
 .container {
     transition: 0.2s;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 6%;
 }
 
@@ -16,6 +16,7 @@
     transition: 0.15s;
     background-color: black;
     padding: 10px;
+    max-width: 600px;
 }
 
 .container:hover .containerImage {
@@ -40,7 +41,6 @@
     display: flex;
     align-items: center;
     color: white;
-    /* background-color: aqua; */
 }
 
 .icons {

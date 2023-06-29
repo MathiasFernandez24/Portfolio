@@ -25,7 +25,7 @@ const CardListMobile = () => {
                         <IconBrandApple stroke={2.5} className={styles.iconButton} />
                     </a>
                 </div>
-                <h1 className={styles.textTitle}>and scan QR Code</h1>
+                <h1 className={styles.textTitle}>and scan QR Code for test</h1>
                 <Arrow />
             </div>
             <div className={styles.containerDevices}>
