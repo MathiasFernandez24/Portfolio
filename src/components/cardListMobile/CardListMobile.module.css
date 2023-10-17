@@ -87,7 +87,7 @@
     height: 40px;
     border-bottom: 10px solid white;
     border-right: 10px solid white;
-    transform: rotate(0deg);
+    /* transform: rotate(0deg); */
     animation: bounce 0.8s infinite alternate;
 }
 
